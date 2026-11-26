@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- static build 2026-11-26T07:08:28Z | available=43 verified=34 -->
+<!-- static build 2026-11-26T07:13:31Z | available=43 verified=34 -->
 <title>Akun Muse AI 1B Token — LYID</title>
 <meta name="description" content="Akun Muse AI satu miliar token, sudah jadi dan siap login. Email, password, dan kunci 2FA diserahkan setelah pembayaran.">
 <meta name="robots" content="noindex">
@@ -25,9 +25,9 @@
   --paper-raise:  oklch(19.5% 0.010 58);
   --paper-sink:   oklch(12.5% 0.007 55);
   /* ink */
-  --ink:          oklch(94%   0.012 70);
-  --ink-dim:      oklch(73%   0.014 65);
-  --ink-faint:    oklch(56%   0.012 60);
+  --ink:          oklch(95%   0.012 70);
+  --ink-dim:      oklch(80%   0.014 65);
+  --ink-faint:    oklch(67%   0.012 60);
   /* structure */
   --rule:         oklch(28%   0.010 58);
   --rule-strong:  oklch(40%   0.012 58);
@@ -110,6 +110,14 @@ h1 .mark{color:var(--accent)}
   font-size:var(--text-lg); color:var(--ink-dim);
   max-width:38ch; margin:0 0 var(--sp-4); line-height:1.5;
 }
+/* the load-bearing risk sits next to the decision, not buried below the pitch */
+.hero-caveat{
+  margin:var(--sp-4) 0 0; padding-left:var(--sp-3);
+  border-left:2px solid var(--accent);
+  font-size:var(--text-sm); color:var(--ink-dim); max-width:44ch; line-height:1.5;
+}
+.hero-caveat a{color:var(--accent); text-decoration:none; border-bottom:1px solid currentColor}
+.hero-caveat a:hover{color:var(--accent-hover)}
 
 /* receipt — the proof panel of the diptych */
 .receipt{
@@ -138,7 +146,8 @@ h1 .mark{color:var(--accent)}
 .pip{width:6px;height:6px;border-radius:50%;background:var(--ok);flex:none;margin-top:0.42em}
 
 /* section furniture */
-section{padding:var(--sp-7) 0}
+section{padding:var(--sp-6) 0}
+.split{padding:var(--sp-6) 0}
 .rule{height:2px;background:var(--rule-strong);border:0;margin:0}
 h2{
   font-family:var(--font-display); font-weight:400;
@@ -245,15 +254,19 @@ kbd{
 /* close */
 .close{padding:var(--sp-6) 0 0}
 .cta{
-  display:inline-block; padding:var(--sp-4) var(--sp-6);
+  display:flex; align-items:center; justify-content:center; gap:var(--sp-3);
+  padding:calc(var(--sp-4) + 2px) var(--sp-6);
   background:var(--accent); color:var(--accent-ink);
-  font-family:var(--font-body); font-weight:700; font-size:var(--text-base);
+  font-family:var(--font-body); font-weight:700;
+  font-size:1.1rem; letter-spacing:0.005em;
   text-decoration:none; white-space:nowrap;
+  border:0; width:100%;
   transition:background-color var(--dur-1) var(--ease-out);
 }
 .cta:hover{background:var(--accent-hover)}
 .cta:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
-.close-note{margin-top:var(--sp-3); font-size:var(--text-sm); color:var(--ink-faint); max-width:44ch}
+.cta svg{flex:none}
+.close-note{margin-top:var(--sp-3); font-size:var(--text-sm); color:var(--ink-dim); max-width:44ch}
 
 .colophon{
   display:flex; justify-content:space-between; gap:var(--sp-4); flex-wrap:wrap;
@@ -300,6 +313,10 @@ kbd{
       </p>
       <p class="faint" style="max-width:42ch">
         Bukan jasa pendaftaran. Bukan pre-order. Kredensial diserahkan setelah bayar.
+      </p>
+      <p class="hero-caveat">
+        Wajib VPN Jepang saat login pertama. Tanpa itu akun terkunci, dan tidak ada
+        penggantian. <a href="#syarat">Baca syaratnya</a> sebelum bayar.
       </p>
     </div>
 
@@ -393,7 +410,10 @@ kbd{
     </div>
 
     <div class="close">
-      <a class="cta" id="waLink" href="#">Pesan lewat WhatsApp</a>
+      <a class="cta" id="waLink" href="#">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.41a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.65.31-.22.25-.85.83-.85 2.03s.87 2.35.99 2.51c.12.16 1.71 2.61 4.15 3.66.58.25 1.03.4 1.39.51.58.19 1.11.16 1.53.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29Z"/></svg>
+        <span>Pesan lewat WhatsApp</span>
+      </a>
       <p class="close-note" id="waNote">Pesan sudah terisi jumlah yang kamu pilih.</p>
     </div>
   </section>
@@ -431,7 +451,7 @@ kbd{
     </div>
   </section>
 
-  <section>
+  <section id="syarat">
     <div class="disclose">
       <h2>Yang tidak saya janjikan</h2>
       <ol>
@@ -464,7 +484,7 @@ kbd{
 </div>
 
 <script>
-window.__MUSE_DATA__ = {"available":43,"verified":34,"sold":0,"total":43,"updated":"2026-11-26T07:08:28Z"};
+window.__MUSE_DATA__ = {"available":43,"verified":34,"sold":0,"total":43,"updated":"2026-11-26T07:13:31Z"};
 </script>
 <script>
 (function () {
