@@ -3,175 +3,538 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- static build 2026-11-26T07:00:53Z | available=43 verified=34 -->
+<!-- static build 2026-11-26T07:08:28Z | available=43 verified=34 -->
 <title>Akun Muse AI 1B Token — LYID</title>
-<meta name="description" content="Akun Muse AI (muse.ai) 1 miliar token, sudah jadi dan siap login. Email, password, dan 2FA secret diserahkan setelah pembayaran.">
-<meta property="og:title" content="Akun Muse AI 1B Token — LYID">
-<meta property="og:description" content="Akun siap pakai, sudah diuji login. Stok terbatas.">
+<meta name="description" content="Akun Muse AI satu miliar token, sudah jadi dan siap login. Email, password, dan kunci 2FA diserahkan setelah pembayaran.">
 <meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231c1712'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='20' fill='%23d4693f' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --bg:#09090b; --card:#111114; --line:#1f1f27; --text:#e8e8ee;
-    --dim:#a8a8bd; --ok:#4ade80; --warn:#fbbf24; --blue:#3b82f6; --purple:#8b5cf6;
-  }
-  *{box-sizing:border-box;margin:0;padding:0}
-  body{
-    background:var(--bg); color:var(--text); min-height:100vh;
-    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    padding:0 20px;-webkit-font-smoothing:antialiased;
-  }
-  .wrap{max-width:760px;margin:0 auto;padding:56px 0 80px}
+/* Hallmark · macrostructure: Split Studio · tone: editorial-austere · anchor hue: vermilion 32deg
+ * theme: custom (sumi paper · vermilion accent · Instrument Serif + Karla)
+ * axes: dark / classical-serif / warm
+ * surface: Decide-Learn · nav: N9 edge-aligned · footer: Ft2 inline single line
+ * enrichment: none (typography-led) · motion: 1 primitive (radio state)
+ * pre-emit critique: P5 H5 E5 S5 R4 V4
+ */
+:root{
+  /* paper — warm sumi, tinted toward the accent so no neutral is a flat grey */
+  --paper:        oklch(15.5% 0.008 55);
+  --paper-raise:  oklch(19.5% 0.010 58);
+  --paper-sink:   oklch(12.5% 0.007 55);
+  /* ink */
+  --ink:          oklch(94%   0.012 70);
+  --ink-dim:      oklch(73%   0.014 65);
+  --ink-faint:    oklch(56%   0.012 60);
+  /* structure */
+  --rule:         oklch(28%   0.010 58);
+  --rule-strong:  oklch(40%   0.012 58);
+  /* accents — one chroma accent, one status */
+  --accent:       oklch(62%   0.185 32);
+  --accent-hover: oklch(68%   0.185 32);
+  --accent-ink:   oklch(16%   0.020 32);
+  --ok:           oklch(74%   0.125 152);
+  /* type */
+  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-body:    Karla, ui-sans-serif, system-ui, sans-serif;
+  --text-xs:   0.78rem;
+  --text-sm:   0.875rem;
+  --text-base: 1.0625rem;
+  --text-lg:   1.25rem;
+  --text-xl:   clamp(1.45rem, 2.6vw, 1.85rem);
+  --text-display: clamp(2.35rem, 6.6vw, 4.4rem);
+  /* space — 4pt */
+  --sp-1: 0.25rem; --sp-2: 0.5rem;  --sp-3: 0.75rem; --sp-4: 1rem;
+  --sp-5: 1.5rem;  --sp-6: 2rem;    --sp-7: 3rem;    --sp-8: 4.5rem;
+  --dur-1: 120ms; --dur-2: 220ms;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --maxw: 1120px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:var(--font-body); font-size:var(--text-base);
+  font-weight:400; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  text-wrap:pretty;
+}
+/* grain: keeps dark paper from reading as flat synthetic black */
+body::before{
+  content:""; position:fixed; inset:0; z-index:0; pointer-events:none;
+  opacity:0.035;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.wrap{position:relative;z-index:1;max-width:var(--maxw);margin:0 auto;padding:0 var(--sp-5)}
 
-  .brand{display:flex;align-items:center;gap:10px;margin-bottom:36px;font-size:14px;
-    letter-spacing:.14em;text-transform:uppercase;color:var(--dim);font-weight:600}
-  .brand i{display:block;width:8px;height:8px;border-radius:50%;
-    background:linear-gradient(135deg,var(--blue),var(--purple))}
+/* top line: wordmark + one fact, no fake nav */
+.top{
+  display:flex; align-items:baseline; justify-content:space-between;
+  gap:var(--sp-4); padding:var(--sp-5) 0 var(--sp-4);
+  border-bottom:1px solid var(--rule);
+}
+.wordmark{
+  font-family:var(--font-display); font-size:var(--text-lg);
+  letter-spacing:0.02em; font-weight:400;
+  overflow-wrap:anywhere; min-width:0;
+}
+.wordmark span{color:var(--accent)}
+.top-fact{
+  font-size:var(--text-xs); color:var(--ink-faint);
+  letter-spacing:0.09em; text-transform:uppercase; white-space:nowrap;
+}
 
-  h1{font-size:clamp(30px,6vw,42px);line-height:1.15;letter-spacing:-.02em;margin-bottom:16px}
-  h1 em{font-style:normal;background:linear-gradient(135deg,var(--blue),var(--purple));
-    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-  .lede{color:var(--dim);font-size:17px;max-width:56ch;margin-bottom:30px}
+/* the diptych — the page's structural unit */
+.split{
+  display:grid; grid-template-columns:minmax(0,1.15fr) minmax(0,0.85fr);
+  gap:clamp(var(--sp-5), 4vw, var(--sp-8));
+  align-items:start;
+}
+.split.reverse > .panel-a{order:2}
+.split.reverse > .panel-b{order:1}
 
-  .stock{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border-radius:999px;
-    background:var(--card);border:1px solid var(--line);font-size:14px;margin-bottom:38px}
-  .stock b{color:var(--ok);font-weight:600}
-  .stock .dot{width:7px;height:7px;border-radius:50%;background:var(--ok);
-    box-shadow:0 0 0 3px rgba(74,222,128,.16)}
+/* hero */
+.hero{padding:var(--sp-8) 0 var(--sp-7)}
+h1{
+  font-family:var(--font-display); font-weight:400;
+  font-size:var(--text-display); line-height:1.06;
+  letter-spacing:-0.018em; margin:0 0 var(--sp-4);
+  font-style:normal; overflow-wrap:anywhere; min-width:0;
+  max-width:13ch;
+}
+h1 .mark{color:var(--accent)}
+.hero-sub{
+  font-size:var(--text-lg); color:var(--ink-dim);
+  max-width:38ch; margin:0 0 var(--sp-4); line-height:1.5;
+}
 
-  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
-    margin-bottom:40px}
-  .price{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 20px;
-    position:relative;transition:border-color .18s}
-  .price:hover{border-color:#2e2e3a}
-  .price.feat{border-color:rgba(139,92,246,.5)}
-  .price .tag{position:absolute;top:-9px;right:14px;font-size:11px;letter-spacing:.06em;
-    text-transform:uppercase;background:linear-gradient(135deg,var(--blue),var(--purple));
-    color:#fff;padding:3px 9px;border-radius:999px;font-weight:700}
-  .price .qty{font-size:14px;color:var(--dim);margin-bottom:8px}
-  .price .amt{font-size:26px;font-weight:700;letter-spacing:-.02em}
-  .price .save{font-size:13px;color:var(--ok);margin-top:6px}
+/* receipt — the proof panel of the diptych */
+.receipt{
+  background:var(--paper-raise); border:1px solid var(--rule);
+  padding:var(--sp-5);
+}
+.receipt-line{
+  display:flex; align-items:baseline; justify-content:space-between;
+  gap:var(--sp-3); padding:var(--sp-3) 0;
+  border-bottom:1px solid var(--rule); font-size:var(--text-sm);
+}
+.receipt-line:first-child{padding-top:0}
+.receipt-line:last-of-type{border-bottom:0; padding-bottom:0}
+.receipt-line dt{color:var(--ink-faint); margin:0}
+.receipt-line dd{
+  margin:0; font-variant-numeric:tabular-nums;
+  color:var(--ink); font-weight:600; white-space:nowrap;
+}
+.receipt-line dd.live{color:var(--ok)}
+.receipt-note{
+  display:flex; align-items:flex-start; gap:var(--sp-2);
+  margin-top:var(--sp-4); padding-top:var(--sp-3);
+  border-top:1px solid var(--rule);
+  font-size:var(--text-xs); color:var(--ink-faint); line-height:1.45;
+}
+.pip{width:6px;height:6px;border-radius:50%;background:var(--ok);flex:none;margin-top:0.42em}
 
-  h2{font-size:19px;margin:38px 0 14px;letter-spacing:-.01em}
-  ol,ul{padding-left:22px;color:var(--dim)}
-  ol li,ul li{margin-bottom:9px}
-  ol li strong{color:var(--text)}
-  code{background:#17171d;border:1px solid var(--line);border-radius:5px;
-    padding:1px 6px;font-size:14px;color:#c9c9dd}
+/* section furniture */
+section{padding:var(--sp-7) 0}
+.rule{height:2px;background:var(--rule-strong);border:0;margin:0}
+h2{
+  font-family:var(--font-display); font-weight:400;
+  font-size:var(--text-xl); line-height:1.2;
+  letter-spacing:-0.01em; margin:0 0 var(--sp-4);
+  font-style:normal; overflow-wrap:anywhere; min-width:0;
+}
+p{margin:0 0 var(--sp-4)}
+p:last-child{margin-bottom:0}
+.dim{color:var(--ink-dim)}
+.faint{color:var(--ink-faint);font-size:var(--text-sm)}
 
-  .warn{background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.3);
-    border-radius:12px;padding:20px 22px;margin-top:18px}
-  .warn h3{font-size:15px;color:var(--warn);margin-bottom:10px;letter-spacing:.02em}
-  .warn ol{padding-left:20px;color:#cfc6b0;font-size:15px}
-  .warn ol li{margin-bottom:8px}
+/* what you get — definition list, not an icon-card grid */
+.specs{margin:0; display:grid; gap:0}
+.specs > div{
+  display:grid; grid-template-columns:minmax(0,8rem) minmax(0,1fr);
+  gap:var(--sp-4); padding:var(--sp-3) 0;
+  border-bottom:1px solid var(--rule);
+}
+.specs > div:first-child{border-top:1px solid var(--rule)}
+.specs dt{color:var(--ink-faint); font-size:var(--text-sm)}
+.specs dd{margin:0; font-size:var(--text-base)}
 
-  .cta{display:block;text-align:center;margin-top:38px;padding:17px 24px;border-radius:12px;
-    background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;
-    text-decoration:none;font-weight:700;font-size:16px;transition:opacity .18s}
-  .cta:hover{opacity:.9}
-  .note{text-align:center;color:var(--dim);font-size:13px;margin-top:14px}
-  .foot{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
-    color:#8a8a9e;font-size:13px;display:flex;justify-content:space-between;
-    flex-wrap:wrap;gap:8px}
-  .note{text-align:center;color:var(--dim);font-size:13px;margin-top:14px}
-  @media(max-width:420px){
-    .price .tag{top:-8px;right:10px;font-size:10px}
-    .grid{grid-template-columns:1fr}
-  }
+/* price rows: selectable, not three equal cards */
+.choices{border-top:1px solid var(--rule); margin:0; padding:0; list-style:none}
+.choice{margin:0; border-bottom:1px solid var(--rule)}
+.choice label{
+  display:grid; grid-template-columns:auto minmax(0,1fr) auto;
+  align-items:center; gap:var(--sp-4);
+  padding:var(--sp-4) var(--sp-2);
+  cursor:pointer;
+  transition:background-color var(--dur-2) var(--ease-out);
+}
+.choice label:hover{background:var(--paper-raise)}
+.choice input{
+  appearance:none; -webkit-appearance:none;
+  width:18px; height:18px; margin:0; flex:none;
+  border:1px solid var(--rule-strong); border-radius:50%;
+  background:transparent; cursor:pointer; position:relative;
+  transition:border-color var(--dur-1) var(--ease-out);
+}
+.choice input:checked{border-color:var(--accent)}
+.choice input:checked::after{
+  content:""; position:absolute; inset:3px; border-radius:50%;
+  background:var(--accent);
+}
+.choice input:focus-visible{
+  outline:2px solid var(--accent); outline-offset:3px;
+}
+.choice-qty{font-size:var(--text-base); min-width:0}
+.choice-qty small{
+  display:block; color:var(--ink-faint); font-size:var(--text-xs);
+  margin-top:2px;
+}
+.choice-price{
+  font-family:var(--font-display); font-size:var(--text-lg);
+  font-variant-numeric:tabular-nums; white-space:nowrap;
+}
+.choice:has(input:checked) .choice-price{color:var(--accent)}
+
+.total{
+  display:flex; align-items:baseline; justify-content:space-between;
+  gap:var(--sp-4); flex-wrap:wrap;
+  margin-top:var(--sp-5); padding-top:var(--sp-4);
+  border-top:2px solid var(--rule-strong);
+}
+.total-label{font-size:var(--text-sm); color:var(--ink-faint)}
+.total-value{
+  font-family:var(--font-display); font-size:var(--text-xl);
+  font-variant-numeric:tabular-nums;
+  transition:color var(--dur-1) var(--ease-out);
+}
+
+/* steps: ordinal is legitimate here */
+.steps{list-style:none; margin:0; padding:0; counter-reset:s}
+.steps li{
+  counter-increment:s; position:relative;
+  padding:var(--sp-3) 0 var(--sp-3) calc(var(--sp-6) + var(--sp-1));
+  border-bottom:1px solid var(--rule);
+}
+.steps li::before{
+  content:counter(s); position:absolute; left:0; top:var(--sp-3);
+  font-family:var(--font-display); font-size:var(--text-sm);
+  color:var(--accent); font-variant-numeric:tabular-nums;
+  width:var(--sp-5); text-align:right;
+}
+.steps li:last-child{border-bottom:0}
+.steps b{font-weight:600}
+kbd{
+  font-family:var(--font-body); font-size:0.94em;
+  background:var(--paper-sink); border:1px solid var(--rule);
+  padding:0.08em 0.4em; color:var(--ink-dim);
+  white-space:nowrap;
+}
+
+/* disclosure: hairline + accent rule, not an amber alert card */
+.disclose{background:var(--paper-sink); border-top:2px solid var(--accent); padding:var(--sp-6) var(--sp-5)}
+.disclose h2{margin-bottom:var(--sp-3)}
+.disclose ol{margin:0; padding-left:1.15rem; color:var(--ink-dim)}
+.disclose li{margin-bottom:var(--sp-3); line-height:1.55}
+.disclose li:last-child{margin-bottom:0}
+.disclose strong{color:var(--ink); font-weight:600}
+
+/* close */
+.close{padding:var(--sp-6) 0 0}
+.cta{
+  display:inline-block; padding:var(--sp-4) var(--sp-6);
+  background:var(--accent); color:var(--accent-ink);
+  font-family:var(--font-body); font-weight:700; font-size:var(--text-base);
+  text-decoration:none; white-space:nowrap;
+  transition:background-color var(--dur-1) var(--ease-out);
+}
+.cta:hover{background:var(--accent-hover)}
+.cta:focus-visible{outline:2px solid var(--ink); outline-offset:3px}
+.close-note{margin-top:var(--sp-3); font-size:var(--text-sm); color:var(--ink-faint); max-width:44ch}
+
+.colophon{
+  display:flex; justify-content:space-between; gap:var(--sp-4); flex-wrap:wrap;
+  padding:var(--sp-5) 0 var(--sp-7); border-top:1px solid var(--rule);
+  font-size:var(--text-xs); color:var(--ink-faint);
+  font-variant-numeric:tabular-nums;
+}
+
+/* responsive */
+@media (max-width:860px){
+  .split, .split.reverse{grid-template-columns:minmax(0,1fr)}
+  .split.reverse > .panel-a{order:0}
+  .split.reverse > .panel-b{order:0}
+  h1{max-width:none}
+  .hero{padding:var(--sp-7) 0 var(--sp-6)}
+}
+@media (max-width:520px){
+  .top-fact{display:none}
+  .specs > div{grid-template-columns:minmax(0,1fr); gap:var(--sp-1)}
+  .choice-price{font-size:1.05rem}
+  .cta{display:block; text-align:center}
+  section{padding:var(--sp-6) 0}
+  .disclose{padding:var(--sp-5) var(--sp-4)}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms !important; animation-duration:1ms !important}
+}
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="brand"><i></i> LYID</div>
+  <header class="top">
+    <div class="wordmark">LYID<span>.</span></div>
+    <div class="top-fact">Akun Muse AI · stok terbatas</div>
+  </header>
 
-  <h1>Akun <em>Muse AI</em><br>1 miliar token</h1>
-  <p class="lede">
-    Muse itu agen AI pribadi dari Meta — bisa chat, browsing, belanja, dan kelola
-    kalender. Akun di sini sudah jadi: kamu dapat email, password, dan 2FA secret.
-    Tinggal login, tanpa perlu ikut promo atau lewat verifikasi apa pun.
-  </p>
-
-  <div class="stock" id="stock">
-    <span class="dot"></span><span id="stockText">memuat stok…</span>
-  </div>
-
-  <div class="grid">
-    <div class="price">
-      <div class="qty">1 akun</div>
-      <div class="amt">Rp 20.000</div>
+  <section class="hero split">
+    <div class="panel-a">
+      <h1>Satu miliar token, <span class="mark">tanpa rebutan promo.</span></h1>
+      <p class="hero-sub">
+        Akun Muse AI dari Meta — agen yang bisa browsing, belanja, dan mengurus
+        kalender. Sudah jadi. Kamu dapat email, password, dan kunci 2FA.
+      </p>
+      <p class="faint" style="max-width:42ch">
+        Bukan jasa pendaftaran. Bukan pre-order. Kredensial diserahkan setelah bayar.
+      </p>
     </div>
-    <div class="price">
-      <div class="qty">3 akun</div>
-      <div class="amt">Rp 50.000</div>
-      <div class="save">hemat Rp 10.000</div>
+
+    <div class="panel-b">
+      <dl class="receipt">
+        <div class="receipt-line">
+          <dt>Stok tersedia</dt>
+          <dd id="stockText" class="live">—</dd>
+        </div>
+        <div class="receipt-line">
+          <dt>Sudah diuji login</dt>
+          <dd id="verifiedText">—</dd>
+        </div>
+        <div class="receipt-line">
+          <dt>Mulai dari</dt>
+          <dd>Rp 20.000</dd>
+        </div>
+        <div class="receipt-line">
+          <dt>Kuota per akun</dt>
+          <dd>1 miliar token</dd>
+        </div>
+        <div class="receipt-line">
+          <dt>Kunci 2FA</dt>
+          <dd>disertakan</dd>
+        </div>
+      </dl>
+      <div class="receipt-note">
+        <span class="pip" id="pip"></span>
+        <span id="noteText">Angka stok dihitung ulang setiap ada akun baru lolos uji.</span>
+      </div>
     </div>
-    <div class="price feat">
-      <div class="tag">paling laku</div>
-      <div class="qty">5 akun</div>
-      <div class="amt">Rp 75.000</div>
-      <div class="save">hemat Rp 25.000</div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="split">
+    <div class="panel-a">
+      <h2>Apa yang kamu pegang</h2>
+      <dl class="specs">
+        <div><dt>Email</dt><dd>Alamat Outlook yang menempel pada akun</dd></div>
+        <div><dt>Password</dt><dd>Kata sandi akun, bukan sandi sementara</dd></div>
+        <div><dt>Kunci 2FA</dt><dd>Secret TOTP untuk membuat kode 6 digit kapan saja</dd></div>
+        <div><dt>Panduan</dt><dd>Tujuh langkah login, termasuk syarat jaringan</dd></div>
+      </dl>
     </div>
-  </div>
+    <div class="panel-b">
+      <h2>Kenapa tidak daftar sendiri</h2>
+      <p class="dim">
+        Jalur gratisnya menuntut tiga hal sekaligus: masuk dua kanal Telegram,
+        melewati verifikasi Cloudflare, dan menangkap stok yang habis dalam
+        hitungan menit. Di sini ketiganya sudah selesai.
+      </p>
+      <p class="faint">
+        Yang kamu bayar bukan tokennya — tokennya gratis. Yang kamu bayar
+        kerja yang tidak perlu kamu ulang.
+      </p>
+    </div>
+  </section>
 
-  <h2>Cara login</h2>
-  <p class="lede" style="margin-bottom:14px">
-    Ikuti persis. Kalau tidak, akun bisa terkunci di percobaan pertama.
-  </p>
-  <ol>
-    <li>Nyalakan <strong>VPN ke Jepang</strong> (mode TUN atau Global). Jangan split tunnel.</li>
-    <li>Buka <strong>jendela incognito baru</strong>, lalu <code>muse.ai</code>.</li>
-    <li>Isi email, klik <strong>Continue</strong>.</li>
-    <li>Klik <strong>"Use password instead"</strong> di bagian bawah.</li>
-    <li>Masukkan password, klik <strong>Next</strong>.</li>
-    <li>Di layar <strong>"Confirm your Meta Account"</strong>, pilih
-        <strong>MuseAuth (Authenticator App)</strong>, klik Next.</li>
-    <li>Masukkan 6 digit dari 2FA secret yang saya kirim.</li>
-  </ol>
+  <section>
+    <h2>Pilih jumlah</h2>
+    <p class="faint" style="margin-bottom:var(--sp-4)">Harga turun kalau ambil lebih dari satu.</p>
 
-  <h2>Yang perlu kamu tahu</h2>
-  <div class="warn">
-    <h3>Baca sebelum bayar</h3>
-    <ol>
-      <li><strong>Tidak ada garansi pengganti.</strong> Yang saya jamin cuma satu:
-          akun berfungsi saat saya serahkan. Kalau terkunci karena langkah VPN di atas
-          tidak diikuti, itu bukan cacat produk.</li>
-      <li>Segera ganti password setelah login pertama kalau mau lebih aman.</li>
-      <li>Akun dibuat pihak ketiga lewat promo resmi Meta, jadi secara teori mereka
-          masih pegang akses email pemulihan. Saya bilang terus terang daripada kamu
-          tahu belakangan. Kalau butuh akun dengan kepemilikan penuh, ini bukan
-          produk yang tepat.</li>
-      <li>Stok terbatas. Setelah habis, tidak ada lagi.</li>
-    </ol>
-  </div>
+    <ul class="choices" id="choices" role="radiogroup" aria-label="Jumlah akun">
+      <li class="choice">
+        <label>
+          <input type="radio" name="qty" value="1" data-price="20000" checked>
+          <span class="choice-qty">1 akun<small>untuk mencoba dulu</small></span>
+          <span class="choice-price">Rp 20.000</span>
+        </label>
+      </li>
+      <li class="choice">
+        <label>
+          <input type="radio" name="qty" value="3" data-price="50000">
+          <span class="choice-qty">3 akun<small>hemat Rp 10.000</small></span>
+          <span class="choice-price">Rp 50.000</span>
+        </label>
+      </li>
+      <li class="choice">
+        <label>
+          <input type="radio" name="qty" value="5" data-price="75000">
+          <span class="choice-qty">5 akun<small>hemat Rp 25.000 · paling sering diambil</small></span>
+          <span class="choice-price">Rp 75.000</span>
+        </label>
+      </li>
+    </ul>
 
-  <a class="cta" id="waLink" href="#">Chat WhatsApp untuk pesan</a>
-  <p class="note">Sebut jumlahnya. Saya balas total harga dan cara bayar.</p>
+    <div class="total">
+      <span class="total-label">Total</span>
+      <span class="total-value" id="totalText">Rp 20.000</span>
+    </div>
 
-  <div class="foot">
+    <div class="close">
+      <a class="cta" id="waLink" href="#">Pesan lewat WhatsApp</a>
+      <p class="close-note" id="waNote">Pesan sudah terisi jumlah yang kamu pilih.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="split reverse">
+    <div class="panel-a">
+      <h2>Cara login</h2>
+      <p class="dim" style="margin-bottom:var(--sp-4)">
+        Urutannya penting. Langkah satu bukan saran.
+      </p>
+      <ol class="steps">
+        <li>Nyalakan VPN ke <b>Jepang</b>. Mode TUN atau Global, jangan split tunnel.</li>
+        <li>Buka <b>jendela incognito baru</b>, lalu <kbd>muse.ai</kbd>.</li>
+        <li>Isi email, tekan <b>Continue</b>.</li>
+        <li>Pilih <b>Use password instead</b> di bagian bawah.</li>
+        <li>Masukkan password, tekan <b>Next</b>.</li>
+        <li>Di layar <b>Confirm your Meta Account</b>, pilih <b>MuseAuth</b>, tekan Next.</li>
+        <li>Masukkan 6 digit dari kunci 2FA.</li>
+      </ol>
+    </div>
+    <div class="panel-b">
+      <h2>Kenapa Jepang</h2>
+      <p class="dim">
+        Akun ini lahir dari promo Muse di wilayah Jepang. Kalau kamu masuk dari
+        negara lain, Meta membaca perpindahan lokasi mendadak dan mengunci akun
+        sebelum sempat dipakai.
+      </p>
+      <p class="faint">
+        Ini bukan kekurangan yang bisa saya tambal — ini cara akunnya dibuat.
+        Kalau kamu tidak bisa memakai VPN Jepang sama sekali, produk ini tidak
+        cocok untukmu, dan lebih baik tahu sekarang.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="disclose">
+      <h2>Yang tidak saya janjikan</h2>
+      <ol>
+        <li>
+          <strong>Tidak ada garansi pengganti.</strong> Yang saya jamin hanya satu:
+          akun berfungsi saat diserahkan, dan itu saya uji sebelum kirim.
+        </li>
+        <li>
+          <strong>Akun ini buatan pihak ketiga</strong> lewat promo resmi Meta.
+          Secara teori mereka masih memegang akses ke email pemulihan. Kalau kamu
+          butuh akun dengan kepemilikan penuh, ini bukan produk yang tepat.
+        </li>
+        <li>
+          <strong>Ganti password setelah login pertama</strong> kalau ingin lebih
+          aman. Saya tidak meminta akses apa pun setelah akun diserahkan.
+        </li>
+        <li>
+          <strong>Stoknya habis dan tidak kembali.</strong> Promo sumbernya bisa
+          ditutup kapan saja, dan setelah itu tidak ada akun baru.
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <footer class="colophon">
     <span>LYID · akun digital</span>
-    <span id="updated"></span>
-  </div>
+    <span id="updatedText">stok diperbarui —</span>
+  </footer>
+
 </div>
 
 <script>
+window.__MUSE_DATA__ = {"available":43,"verified":34,"sold":0,"total":43,"updated":"2026-11-26T07:08:28Z"};
+</script>
+<script>
 (function () {
+  /* Static builds inject window.__MUSE_DATA__ via build_static.py.
+     The dashboard copy has no injected data and falls back to the API. */
+  var DATA = window.__MUSE_DATA__ || null;
   var WA = "6287897299985";
-  var MSG = "Halo, saya mau beli akun Muse AI. Masih ada?";
-  var DATA = {available:43,verified:34,sold:0,total:43,updated:"2026-11-26T07:00:53Z"};
-  var el = document.getElementById("stockText");
-  if (!DATA.available) {
-    el.innerHTML = "stok habis - chat untuk masuk daftar tunggu";
-    document.querySelector(".stock .dot").style.background = "#fbbf24";
-  } else {
-    var extra = DATA.verified ? " - " + DATA.verified + " sudah diuji login" : "";
-    el.innerHTML = "<b>" + DATA.available + " akun tersedia</b>" + extra;
-    var t = new Date(DATA.updated);
-    document.getElementById("updated").textContent =
-      "stok diperbarui " + t.toLocaleDateString("id-ID",
-        {day:"numeric",month:"short",year:"numeric"});
+
+  var elStock = document.getElementById("stockText");
+  var elVerif = document.getElementById("verifiedText");
+  var elTotal = document.getElementById("totalText");
+  var elWa    = document.getElementById("waLink");
+  var elNote  = document.getElementById("noteText");
+  var elPip   = document.getElementById("pip");
+  var elUpd   = document.getElementById("updatedText");
+
+  var PRICES = { "1": 20000, "3": 50000, "5": 75000 };
+  var LABEL  = { "1": "1 akun", "3": "3 akun", "5": "5 akun" };
+
+  function rupiah(n) { return "Rp " + n.toLocaleString("id-ID"); }
+
+  function paint(data) {
+    if (!data || typeof data.available !== "number") {
+      elStock.textContent = "tidak terbaca";
+      elStock.classList.remove("live");
+      elPip.style.background = "var(--ink-faint)";
+      elNote.textContent = "Stok tidak terbaca. Tanya langsung lewat WhatsApp.";
+      return;
+    }
+    if (data.available) {
+      elStock.textContent = data.available + " akun";
+    } else {
+      elStock.textContent = "habis";
+      elStock.classList.remove("live");
+      elPip.style.background = "var(--ink-faint)";
+      elNote.textContent = "Stok habis. Tanya kalau mau masuk daftar tunggu.";
+    }
+    elVerif.textContent = data.verified + " dari " + data.total;
+    if (data.updated) {
+      var t = new Date(data.updated);
+      if (!isNaN(t.getTime())) {
+        elUpd.textContent = "stok diperbarui " +
+          t.toLocaleDateString("id-ID", { day: "numeric", month: "long", year: "numeric" });
+      }
+    }
   }
-  document.getElementById("waLink").href =
-    "https://wa.me/" + WA + "?text=" + encodeURIComponent(MSG);
+
+  function sync() {
+    var picked = document.querySelector('input[name="qty"]:checked');
+    var qty = picked ? picked.value : "1";
+    var price = PRICES[qty];
+    elTotal.textContent = rupiah(price);
+    elWa.href = "https://wa.me/" + WA + "?text=" + encodeURIComponent(
+      "Halo, saya mau pesan " + LABEL[qty] + " Muse AI (" + rupiah(price) + "). Masih ada?"
+    );
+  }
+
+  document.getElementById("choices").addEventListener("change", sync);
+  sync();
+
+  if (DATA) {
+    paint(DATA);
+  } else if (window.fetch) {
+    fetch("/api/public/muse-stock")
+      .then(function (r) { return r.json(); })
+      .then(paint)
+      .catch(function () { paint(null); });
+  } else {
+    paint(null);
+  }
 })();
 </script>
 </body>
