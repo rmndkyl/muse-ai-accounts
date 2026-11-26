@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- static build 2026-11-26T06:52:56Z | available=43 verified=34 -->
+<title>Akun Muse AI 1B Token — LYID</title>
+<meta name="description" content="Akun Muse AI (muse.ai) 1 miliar token, sudah jadi dan siap login. Email, password, dan 2FA secret diserahkan setelah pembayaran.">
+<meta property="og:title" content="Akun Muse AI 1B Token — LYID">
+<meta property="og:description" content="Akun siap pakai, sudah diuji login. Stok terbatas.">
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    --bg:#09090b; --card:#111114; --line:#1f1f27; --text:#e8e8ee;
+    --dim:#a8a8bd; --ok:#4ade80; --warn:#fbbf24; --blue:#3b82f6; --purple:#8b5cf6;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--text); min-height:100vh;
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    padding:0 20px;-webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:56px 0 80px}
+
+  .brand{display:flex;align-items:center;gap:10px;margin-bottom:36px;font-size:14px;
+    letter-spacing:.14em;text-transform:uppercase;color:var(--dim);font-weight:600}
+  .brand i{display:block;width:8px;height:8px;border-radius:50%;
+    background:linear-gradient(135deg,var(--blue),var(--purple))}
+
+  h1{font-size:clamp(30px,6vw,42px);line-height:1.15;letter-spacing:-.02em;margin-bottom:16px}
+  h1 em{font-style:normal;background:linear-gradient(135deg,var(--blue),var(--purple));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .lede{color:var(--dim);font-size:17px;max-width:56ch;margin-bottom:30px}
+
+  .stock{display:inline-flex;align-items:center;gap:9px;padding:9px 16px;border-radius:999px;
+    background:var(--card);border:1px solid var(--line);font-size:14px;margin-bottom:38px}
+  .stock b{color:var(--ok);font-weight:600}
+  .stock .dot{width:7px;height:7px;border-radius:50%;background:var(--ok);
+    box-shadow:0 0 0 3px rgba(74,222,128,.16)}
+
+  .grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
+    margin-bottom:40px}
+  .price{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px 20px;
+    position:relative;transition:border-color .18s}
+  .price:hover{border-color:#2e2e3a}
+  .price.feat{border-color:rgba(139,92,246,.5)}
+  .price .tag{position:absolute;top:-9px;right:14px;font-size:11px;letter-spacing:.06em;
+    text-transform:uppercase;background:linear-gradient(135deg,var(--blue),var(--purple));
+    color:#fff;padding:3px 9px;border-radius:999px;font-weight:700}
+  .price .qty{font-size:14px;color:var(--dim);margin-bottom:8px}
+  .price .amt{font-size:26px;font-weight:700;letter-spacing:-.02em}
+  .price .save{font-size:13px;color:var(--ok);margin-top:6px}
+
+  h2{font-size:19px;margin:38px 0 14px;letter-spacing:-.01em}
+  ol,ul{padding-left:22px;color:var(--dim)}
+  ol li,ul li{margin-bottom:9px}
+  ol li strong{color:var(--text)}
+  code{background:#17171d;border:1px solid var(--line);border-radius:5px;
+    padding:1px 6px;font-size:14px;color:#c9c9dd}
+
+  .warn{background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.3);
+    border-radius:12px;padding:20px 22px;margin-top:18px}
+  .warn h3{font-size:15px;color:var(--warn);margin-bottom:10px;letter-spacing:.02em}
+  .warn ol{padding-left:20px;color:#cfc6b0;font-size:15px}
+  .warn ol li{margin-bottom:8px}
+
+  .cta{display:block;text-align:center;margin-top:38px;padding:17px 24px;border-radius:12px;
+    background:linear-gradient(135deg,var(--blue),var(--purple));color:#fff;
+    text-decoration:none;font-weight:700;font-size:16px;transition:opacity .18s}
+  .cta:hover{opacity:.9}
+  .note{text-align:center;color:var(--dim);font-size:13px;margin-top:14px}
+  .foot{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
+    color:#8a8a9e;font-size:13px;display:flex;justify-content:space-between;
+    flex-wrap:wrap;gap:8px}
+  .note{text-align:center;color:var(--dim);font-size:13px;margin-top:14px}
+  @media(max-width:420px){
+    .price .tag{top:-8px;right:10px;font-size:10px}
+    .grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand"><i></i> LYID</div>
+
+  <h1>Akun <em>Muse AI</em><br>1 miliar token</h1>
+  <p class="lede">
+    Muse itu agen AI pribadi dari Meta — bisa chat, browsing, belanja, dan kelola
+    kalender. Akun di sini sudah jadi: kamu dapat email, password, dan 2FA secret.
+    Tinggal login, tanpa perlu ikut promo atau lewat verifikasi apa pun.
+  </p>
+
+  <div class="stock" id="stock">
+    <span class="dot"></span><span id="stockText">memuat stok…</span>
+  </div>
+
+  <div class="grid">
+    <div class="price">
+      <div class="qty">1 akun</div>
+      <div class="amt">Rp 20.000</div>
+    </div>
+    <div class="price">
+      <div class="qty">3 akun</div>
+      <div class="amt">Rp 50.000</div>
+      <div class="save">hemat Rp 10.000</div>
+    </div>
+    <div class="price feat">
+      <div class="tag">paling laku</div>
+      <div class="qty">5 akun</div>
+      <div class="amt">Rp 75.000</div>
+      <div class="save">hemat Rp 25.000</div>
+    </div>
+  </div>
+
+  <h2>Cara login</h2>
+  <p class="lede" style="margin-bottom:14px">
+    Ikuti persis. Kalau tidak, akun bisa terkunci di percobaan pertama.
+  </p>
+  <ol>
+    <li>Nyalakan <strong>VPN ke Jepang</strong> (mode TUN atau Global). Jangan split tunnel.</li>
+    <li>Buka <strong>jendela incognito baru</strong>, lalu <code>muse.ai</code>.</li>
+    <li>Isi email, klik <strong>Continue</strong>.</li>
+    <li>Klik <strong>"Use password instead"</strong> di bagian bawah.</li>
+    <li>Masukkan password, klik <strong>Next</strong>.</li>
+    <li>Di layar <strong>"Confirm your Meta Account"</strong>, pilih
+        <strong>MuseAuth (Authenticator App)</strong>, klik Next.</li>
+    <li>Masukkan 6 digit dari 2FA secret yang saya kirim.</li>
+  </ol>
+
+  <h2>Yang perlu kamu tahu</h2>
+  <div class="warn">
+    <h3>Baca sebelum bayar</h3>
+    <ol>
+      <li><strong>Tidak ada garansi pengganti.</strong> Yang saya jamin cuma satu:
+          akun berfungsi saat saya serahkan. Kalau terkunci karena langkah VPN di atas
+          tidak diikuti, itu bukan cacat produk.</li>
+      <li>Segera ganti password setelah login pertama kalau mau lebih aman.</li>
+      <li>Akun dibuat pihak ketiga lewat promo resmi Meta, jadi secara teori mereka
+          masih pegang akses email pemulihan. Saya bilang terus terang daripada kamu
+          tahu belakangan. Kalau butuh akun dengan kepemilikan penuh, ini bukan
+          produk yang tepat.</li>
+      <li>Stok terbatas. Setelah habis, tidak ada lagi.</li>
+    </ol>
+  </div>
+
+  <a class="cta" id="waLink" href="#">Chat WhatsApp untuk pesan</a>
+  <p class="note">Sebut jumlahnya. Saya balas total harga dan cara bayar.</p>
+
+  <div class="foot">
+    <span>LYID · akun digital</span>
+    <span id="updated"></span>
+  </div>
+</div>
+
+<script>
+(function () {
+  var WA = "6287897299985";
+  var MSG = "Halo, saya mau beli akun Muse AI. Masih ada?";
+  var DATA = {available:43,verified:34,sold:0,total:43,updated:"2026-11-26T06:52:56Z"};
+  var el = document.getElementById("stockText");
+  if (!DATA.available) {
+    el.innerHTML = "stok habis - chat untuk masuk daftar tunggu";
+    document.querySelector(".stock .dot").style.background = "#fbbf24";
+  } else {
+    var extra = DATA.verified ? " - " + DATA.verified + " sudah diuji login" : "";
+    el.innerHTML = "<b>" + DATA.available + " akun tersedia</b>" + extra;
+    var t = new Date(DATA.updated);
+    document.getElementById("updated").textContent =
+      "stok diperbarui " + t.toLocaleDateString("id-ID",
+        {day:"numeric",month:"short",year:"numeric"});
+  }
+  document.getElementById("waLink").href =
+    "https://wa.me/" + WA + "?text=" + encodeURIComponent(MSG);
+})();
+</script>
+</body>
+</html>
